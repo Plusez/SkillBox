@@ -1,0 +1,7 @@
+public enum CatsColor {
+    BLACK_COLOR,
+    WHITE_COLOR,
+    MOTLEY_COLOR,
+    GINGER_COLOR,
+    BLACK_AND_WHITE_COLOR,
+}

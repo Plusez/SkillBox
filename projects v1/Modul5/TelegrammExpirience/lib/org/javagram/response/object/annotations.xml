@@ -1,0 +1,5 @@
+<root>
+    <item name='org.javagram.response.object.User'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+</root>

@@ -1,0 +1,13 @@
+public class Loader {
+
+    public static void main(String[] args) {
+
+    String text = "Unicode support This class is in conformance with Level 1 of Unicode Technical Standard #18: Unicode Regular Expression plus RL2.1 Canonical Equivalents Unicode escape sequences such as u2014 in Java source code are processed as described in section of The Java™ Language Specification. Such escape sequences are also implemented directly by the regular-expression parser so that Unicode escapes can be used in expressions that are read from files or from the keyboard. Thus the strings u2014 and u2014,while not equal, compile into the same pattern, which matches the character with hexadecimal value 0x2014. A Unicode charactercan also be represented in a regular-expression by using its Hex notation(hexadecimal code point value) directly as described in construct x{...}, for example a supplementary character U+2011F can be specified as x{2011F}, instead of two consecutive Unicode escape sequences of the surrogate pair  uD840 uDD1F. Unicode scripts, blocks, categories and binary properties are written with the and constructs as in Perl. p{prop} matches if the input has the property prop, while \\P{prop} does not match if the input has that property. Scripts, blocks, categories and binary properties can be used both inside and outside of a character class Scripts are specified either with the prefix Is, as in IsHiragana, or by using the script keyword (or its short form sc)as in script=Hiragana or sc=Hiragana. The script names supported by Pattern are the valid script names accepted and defined by UnicodeScript.forName. Blocks  specified with the prefix In, as in InMongolian, or by using the keyword block (or its short form blk) as in block=Mongolian or blk=Mongolian. The block names supported by Pattern are the valid block names accepted and defined by UnicodeBlock.forName. Categories may be specified with the optional prefix Is: Both p{L} and p{IsL} denote the category of Unicode letters. Same as scripts and blocks, categories can also be specified by using the keyword general_category (or its short form gc) as in general_category=Luor gc=Lu. The supported categories are those of The Unicode Standard in the version specified by the Character class. The category names are those defined in the Standard, both normative and informative. Binary properties are specified with the prefix Is, as in IsAlphabetic. The supported binary properties by Pattern are Alphabetic Ideographic Letter";
+
+        for (String myWords : text.split("\\W\\s|\\W|\\s")) {
+
+            System.out.println (myWords);
+        }
+    }
+
+}
