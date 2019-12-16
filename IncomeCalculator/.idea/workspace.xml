@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1618631d-b76f-466b-ae74-f32886129052" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Cat/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cat/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cat/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module5/3/src/Loader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntegerExperiments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IntegerExperiments/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +71,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
