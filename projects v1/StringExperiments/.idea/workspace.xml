@@ -2,48 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74551ef3-e027-45c0-ba92-5e70ee5f73c4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../../module5/2/Todolist/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Booleans.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Cat (1).zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IncomeCalculator.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IntegerExperiments.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Modul1Sivkov.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Modul2Sivkov.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Modul2Sivkov_v2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Modul3v1Sivkov.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Modul3v2Sivkov.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadCamera.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RoadController.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../StringExperiments.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../friend.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IncomeCalculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../IncomeCalculator/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../module5/2/Todolist/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module5/2/Todolist/src/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modul2Sivkov.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modul2Sivkov_v2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modul2Sivkov_v3.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modul3Sivkov.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modul3SivkovAll.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modul3Sivkov_v2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modul3Sivkov_v3.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modul3Sivkov_v4.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modul3_v5.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modul4Sivkov_v2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modul4_v3.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modul4_v4.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modul5.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modul5Sivkov2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modul5Sivkov3.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modul5Sivkov4.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modul5Sivkov5.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modul5Sivkov6.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modul5Sivkov7.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modul5Sivkov8.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Modul5Sivkov9.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RoadCamera.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module5/3/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module5/3/src/Loader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1fff33b043ef4300a0f50802bbb298c2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../423eb342857243cf82bcd7805ade237e.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gibdd/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gibdd/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gibdd/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gibdd/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gibdd/Gibdd.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gibdd/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phonebook/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phonebook/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phonebook/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phonebook/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phonebook/Phonebook.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phonebook/src/Loader.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StringExperimentsChar/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StringExperimentsChar/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StringExperimentsChar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StringExperimentsChar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TelegrammExpirience.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modul1Sivkov.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baseNumberAvto5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baseNumberAvto5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cb022e3e741d4aecb65897fc7786bd38.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../f5ccf4b9666a4a51bcf4d24eecd953f9.zip" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +52,7 @@
     <property name="FullScreen" value="false" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553626093027" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../StringExperimentsChar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />

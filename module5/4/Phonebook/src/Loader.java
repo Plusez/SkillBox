@@ -1,4 +1,3 @@
-import java.security.Key;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -21,20 +20,17 @@ public class Loader {
                 for (Integer name : phoneBookSort.keySet()) {
                     System.out.println(name + " - " + phoneBookSort.get(name));
                 }
-            }
-            else {
+            } else {
                 // Если введен номер (телефона)
                 if (anyInput.matches("\\d{7}")) {
                     String normalTelNumber = anyInput.replaceAll("^\\D+$", "");
                     Integer digitTelNumber = Integer.parseInt(normalTelNumber);
                     if (phoneBook.containsKey(digitTelNumber)) {
                         System.out.println(phoneBook.get(digitTelNumber));
-                    }
-                    else {
+                    } else {
                         Scanner prFio = new Scanner(System.in);
                         System.out.println("Такой номер в базе отсутствует. Введите Ф.И.О. для записи нового абонента");
                         String fio = prFio.nextLine();
-                        //Integer digitTelNumber = Integer.parseInt(normalTelNumber);
                         phoneBook.put(digitTelNumber, fio);
                         System.out.printf("Номер %d - %s успешно добавлен в базу. ", digitTelNumber, fio);
                     }
@@ -43,8 +39,7 @@ public class Loader {
                 if (anyInput.matches("^\\D+$")) {
                     if (phoneBook.containsValue(anyInput)) {
                         System.out.println(phoneBook.get(anyInput));
-                    }
-                    else {
+                    } else {
                         System.out.println("Такая фамилия в базе отсутствует. Введите номер для записи нового абонента");
                         Scanner prTelNumber = new Scanner(System.in);
                         Integer digitTelNumber = prTelNumber.nextInt();
