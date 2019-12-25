@@ -18,7 +18,6 @@ public class Loader {
             if (command.equals("list")) {
                 System.out.println(listMail);
             } else if (command.equals("add")) {
-                //Scanner sc2 = new Scanner(System.in);
                 System.out.println("Введите почтовый адрес");
                 String newAddr = scanner.nextLine();
                 String pattern = "^\\w{2,}@\\w{2,}.\\w{2,}$";
