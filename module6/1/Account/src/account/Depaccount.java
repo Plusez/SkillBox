@@ -8,18 +8,22 @@ public class Depaccount extends Payaccount {
         super(balance, nameOwner);
     }
 
+    @Override
     public double getBalance() {
         return this.balance;
     }
 
+    @Override
     public double receiveMoney(double receiveSum) {
         return this.balance += receiveSum;
     }
 
+    @Override
     public String getNameOwner() {
         return nameOwner;
     }
 
+    @Override
     public double payMoney(double paySum) {
         if (getPrevPayPeriod() < 30) {
             System.out.println("Сумма не может быть выдана, не прошло 30 дней");

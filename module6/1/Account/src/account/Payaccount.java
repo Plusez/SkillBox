@@ -2,10 +2,8 @@ package account;
 
 public class Payaccount {
 
-    public double balance;
-    public String nameOwner;
-    public double receiveSum;
-    public double paySum;
+    protected double balance;
+    protected String nameOwner;
 
     public Payaccount(double balance, String nameOwner) {
         this.balance = balance;
@@ -28,4 +26,17 @@ public class Payaccount {
         return balance -= paySum;
     }
 
+
+    public double transferTo(Payaccount receiveAccount, double receiveSum) {
+        double inSum = getBalance();
+        payMoney(receiveSum);
+        double outSum = getBalance();
+        if (inSum != outSum) {
+            receiveAccount.receiveMoney(receiveSum);
+        } else {
+            System.out.println("Операция не может быть проведена, есть ограничения по счету.");
+        }
+        return 0;
+    }
 }
+
