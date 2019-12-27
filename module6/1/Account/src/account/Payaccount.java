@@ -4,6 +4,7 @@ public class Payaccount {
 
     protected double balance;
     protected String nameOwner;
+    protected boolean statusTrans;
 
     public Payaccount(double balance, String nameOwner) {
         this.balance = balance;
@@ -18,25 +19,24 @@ public class Payaccount {
         return nameOwner;
     }
 
-    public double receiveMoney(double receiveSum) {
-        return balance += receiveSum;
+    public boolean receiveMoney(double receiveSum) {
+        balance += receiveSum;
+        return true;
     }
 
-    public double payMoney(double paySum) {
-        return balance -= paySum;
+    public boolean payMoney(double paySum) {
+        balance -= paySum;
+        return true;
     }
 
-
-    public double transferTo(Payaccount receiveAccount, double receiveSum) {
-        double inSum = getBalance();
-        payMoney(receiveSum);
-        double outSum = getBalance();
-        if (inSum != outSum) {
+    public boolean transferTo(Payaccount receiveAccount, double receiveSum) {
+        if (payMoney(receiveSum)) {
             receiveAccount.receiveMoney(receiveSum);
+            return true;
         } else {
             System.out.println("Операция не может быть проведена, есть ограничения по счету.");
+            return false;
         }
-        return 0;
     }
 }
 

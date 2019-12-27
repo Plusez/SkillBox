@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d3566954-15db-468d-82d7-9b60a8957e26" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module6/1/Account/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/1/Account/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module6/1/Account/src/account/Cardaccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/1/Account/src/account/Cardaccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module6/1/Account/src/account/Depaccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/1/Account/src/account/Depaccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module6/1/Account/src/account/Payaccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/1/Account/src/account/Payaccount.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="FullScreen" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../module6/1/Account" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />

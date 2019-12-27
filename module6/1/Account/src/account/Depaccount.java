@@ -14,27 +14,28 @@ public class Depaccount extends Payaccount {
     }
 
     @Override
-    public double receiveMoney(double receiveSum) {
-        return this.balance += receiveSum;
+    public boolean receiveMoney(double receiveSum) {
+        this.balance += receiveSum;
+        return true;
     }
 
-    @Override
     public String getNameOwner() {
         return nameOwner;
     }
 
     @Override
-    public double payMoney(double paySum) {
+    public boolean payMoney(double paySum) {
         if (getPrevPayPeriod() < 30) {
             System.out.println("Сумма не может быть выдана, не прошло 30 дней");
+            return false;
         } else {
             balance -= paySum;
+            return true;
         }
-        return balance;
     }
 
     public int getPrevPayPeriod() {
-        int minRange = 20;
+        int minRange = 20;              // устанавливаем срок от 20 до 40 дней.
         int maxRange = 40;
         return (int) Math.round(minRange + (maxRange - minRange) * Math.random());
 

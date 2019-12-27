@@ -10,22 +10,22 @@ public class Cardaccount extends Payaccount {
 
     @Override
     public double getBalance() {
-        return balance;
+        return this.balance;
     }
 
-    @Override
     public String getNameOwner() {
         return nameOwner;
     }
 
     @Override
-    public double receiveMoney(double receiveSum) {
-        return balance += receiveSum;
+    public boolean receiveMoney(double receiveSum) {
+        balance += receiveSum;
+        return true;
     }
 
     @Override
-    public double payMoney(double paySum) {
-        return balance -= paySum + (paySum * fee);
+    public boolean payMoney(double paySum) {
+        balance -= paySum + (paySum * fee);
+        return true;
     }
-
 }
