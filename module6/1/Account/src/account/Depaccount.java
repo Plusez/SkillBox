@@ -9,21 +9,6 @@ public class Depaccount extends Payaccount {
     }
 
     @Override
-    public double getBalance() {
-        return this.balance;
-    }
-
-    @Override
-    public boolean receiveMoney(double receiveSum) {
-        this.balance += receiveSum;
-        return true;
-    }
-
-    public String getNameOwner() {
-        return nameOwner;
-    }
-
-    @Override
     public boolean payMoney(double paySum) {
         if (getPrevPayPeriod() < 30) {
             System.out.println("Сумма не может быть выдана, не прошло 30 дней");
@@ -38,7 +23,6 @@ public class Depaccount extends Payaccount {
         int minRange = 20;              // устанавливаем срок от 20 до 40 дней.
         int maxRange = 40;
         return (int) Math.round(minRange + (maxRange - minRange) * Math.random());
-
     }
 
 }
