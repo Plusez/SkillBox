@@ -28,7 +28,6 @@ public class Main {
         Depaccount depAccount1 = new Depaccount(100.0, "Smith");
         System.out.println("depaccount1 - " + depAccount1.getBalance() + " - " + depAccount1.getNameOwner());
         System.out.println("Сумма снятия - 500");
-        //System.out.println("getPrevPayPeriod - " + depAccount1.getPrevPayPeriod());
         depAccount1.payMoney(500.0);
         System.out.println("depaccount1 - " + depAccount1.getBalance() + " - " + depAccount1.getNameOwner());
         System.out.println();

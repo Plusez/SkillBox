@@ -12,18 +12,15 @@ public class Depaccount extends Payaccount {
 
     @Override
     public boolean payMoney(double paySum) {
-        if (getPrevPayPeriod() < 30) {
+        int countPayPeriod = getPrevPayPeriod();
+        if (countPayPeriod < 30) {
             System.out.println("Сумма не может быть выдана, не прошло 30 дней");
-            System.out.println("getPrevPayPeriod - " + getPrevPayPeriod());
+            System.out.println("countPayPeriod - " + countPayPeriod);
             return false;
-        }
-        if (getPrevPayPeriod() >= 30){
+        } else {
             super.payMoney(paySum);
-            System.out.println("getPrevPayPeriod - " + getPrevPayPeriod());
+            System.out.println("countPayPeriod - " + countPayPeriod);
             return true;
-        }
-        else {
-            return false;
         }
     }
 
@@ -32,5 +29,4 @@ public class Depaccount extends Payaccount {
         int maxRange = 40;
         return (int) Math.round(minRange + (maxRange - minRange) * Math.random());
     }
-
 }

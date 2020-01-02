@@ -26,10 +26,9 @@ public class Payaccount {
     }
 
     public boolean payMoney(double paySum) {
-        if((balance - paySum) < 0) {
+        if ((balance - paySum) < 0) {
             System.out.println("STOP");
-        }
-        else {
+        } else {
             balance -= paySum;
             System.out.println("paySum - " + paySum);
         }

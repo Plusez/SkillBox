@@ -11,10 +11,9 @@ public class Cardaccount extends Payaccount {
 
     @Override
     public boolean payMoney(double paySum) {
-        super.payMoney(paySum);
-        this.paySum = (paySum + paySum*FEE);
+        super.payMoney(paySum * (1 + FEE));
+        this.paySum = paySum;
         System.out.println("FEE = " + FEE);
-        //System.out.println("!paySum = " + this.paySum);
         return true;
     }
 }
