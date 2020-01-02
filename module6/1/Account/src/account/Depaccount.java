@@ -4,6 +4,8 @@ import java.time.LocalDate;
 
 public class Depaccount extends Payaccount {
 
+    protected static double FEE = 0;
+
     public Depaccount(double balance, String nameOwner) {
         super(balance, nameOwner);
     }
@@ -12,10 +14,16 @@ public class Depaccount extends Payaccount {
     public boolean payMoney(double paySum) {
         if (getPrevPayPeriod() < 30) {
             System.out.println("Сумма не может быть выдана, не прошло 30 дней");
+            System.out.println("getPrevPayPeriod - " + getPrevPayPeriod());
             return false;
-        } else {
-            balance -= paySum;
+        }
+        if (getPrevPayPeriod() >= 30){
+            super.payMoney(paySum);
+            System.out.println("getPrevPayPeriod - " + getPrevPayPeriod());
             return true;
+        }
+        else {
+            return false;
         }
     }
 

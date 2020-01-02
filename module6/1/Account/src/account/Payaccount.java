@@ -5,6 +5,7 @@ public class Payaccount {
     protected double balance;
     protected String nameOwner;
     protected boolean statusTrans;
+    protected static double FEE = 0;
 
     public Payaccount(double balance, String nameOwner) {
         this.balance = balance;
@@ -25,7 +26,13 @@ public class Payaccount {
     }
 
     public boolean payMoney(double paySum) {
-        balance -= paySum;
+        if((balance - paySum) < 0) {
+            System.out.println("STOP");
+        }
+        else {
+            balance -= paySum;
+            System.out.println("paySum - " + paySum);
+        }
         return true;
     }
 
