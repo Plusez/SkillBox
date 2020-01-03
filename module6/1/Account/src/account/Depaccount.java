@@ -17,6 +17,10 @@ public class Depaccount extends Payaccount {
             System.out.println("Сумма не может быть выдана, не прошло 30 дней");
             System.out.println("countPayPeriod - " + countPayPeriod);
             return false;
+        }
+        if ((balance - paySum) < 0) {
+            System.out.println("STOP");
+            return false;
         } else {
             super.payMoney(paySum);
             System.out.println("countPayPeriod - " + countPayPeriod);

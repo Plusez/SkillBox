@@ -28,11 +28,12 @@ public class Payaccount {
     public boolean payMoney(double paySum) {
         if ((balance - paySum) < 0) {
             System.out.println("STOP");
+            return false;
         } else {
             balance -= paySum;
             System.out.println("paySum - " + paySum);
+            return true;
         }
-        return true;
     }
 
     public boolean transferTo(Payaccount receiveAccount, double receiveSum) {
@@ -45,4 +46,3 @@ public class Payaccount {
         }
     }
 }
-
