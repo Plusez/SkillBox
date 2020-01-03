@@ -3,21 +3,13 @@ package account;
 public class Payaccount {
 
     protected double balance;
-    protected String nameOwner;
-    protected boolean statusTrans;
-    protected static double FEE = 0;
 
-    public Payaccount(double balance, String nameOwner) {
+    public Payaccount(double balance) {
         this.balance = balance;
-        this.nameOwner = nameOwner;
     }
 
     public double getBalance() {
         return balance;
-    }
-
-    public String getNameOwner() {
-        return nameOwner;
     }
 
     public boolean receiveMoney(double receiveSum) {
@@ -28,11 +20,12 @@ public class Payaccount {
     public boolean payMoney(double paySum) {
         if ((balance - paySum) < 0) {
             System.out.println("STOP");
+            return false;
         } else {
             balance -= paySum;
             System.out.println("paySum - " + paySum);
+            return true;
         }
-        return true;
     }
 
     public boolean transferTo(Payaccount receiveAccount, double receiveSum) {
