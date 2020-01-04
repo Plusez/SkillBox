@@ -27,15 +27,15 @@ public class Main {
 
         Depaccount depAccount1 = new Depaccount(100.0);
         System.out.println("depaccount1 - " + depAccount1.getBalance());
-        System.out.println("Сумма снятия - 500");
-        depAccount1.payMoney(500.0);
+        System.out.println("Сумма снятия - 50");
+        depAccount1.payMoney(50.0);
         System.out.println("depaccount1 - " + depAccount1.getBalance());
         System.out.println();
 
         Cardaccount cardAccount1 = new Cardaccount(100.0);
         System.out.println("cardAccount1 - " + cardAccount1.getBalance());
-        System.out.println("Сумма снятия - 550");
-        cardAccount1.payMoney(550.0);
+        System.out.println("Сумма снятия - 50");
+        cardAccount1.payMoney(50.0);
         System.out.println("cardAccount1 - " + cardAccount1.getBalance());
         System.out.println();
 
@@ -45,37 +45,37 @@ public class Main {
         System.out.println("in balance cardAccount1 - " + cardAccount1.getBalance());
         System.out.println();
 
-        payAccount1.transferTo(cardAccount1, 500.0);
+        payAccount1.transferTo(cardAccount1, 50.0);
         System.out.println("payAccount1.transferTo(cardAccount1)");
         System.out.println("payAccount1 - " + payAccount1.getBalance());
         System.out.println("cardAccount1 - " + cardAccount1.getBalance());
         System.out.println();
 
-        payAccount1.transferTo(depAccount1, 500.0);
+        payAccount1.transferTo(depAccount1, 50.0);
         System.out.println("payAccount1.transferTo(depAccount1)");
         System.out.println("payAccount1 - " + payAccount1.getBalance());
         System.out.println("depAccount1 - " + depAccount1.getBalance());
         System.out.println();
 
-        depAccount1.transferTo(payAccount1, 500.0);
+        depAccount1.transferTo(payAccount1, 50.0);
         System.out.println("depAccount1.transferTo(payAccount1)");
         System.out.println("depAccount1 - " + depAccount1.getBalance());
         System.out.println("payAccount1 - " + payAccount1.getBalance());
         System.out.println();
 
-        depAccount1.transferTo(cardAccount1, 500.0);
+        depAccount1.transferTo(cardAccount1, 50.0);
         System.out.println("depAccount1.transferTo(cardAccount1)");
         System.out.println("depAccount1 - " + depAccount1.getBalance());
         System.out.println("cardAccount1 - " + cardAccount1.getBalance());
         System.out.println();
 
-        cardAccount1.transferTo(payAccount1, 500.0);
+        cardAccount1.transferTo(payAccount1, 50.0);
         System.out.println("cardAccount1.transferTo(payAccount1)");
         System.out.println("cardAccount1 - " + cardAccount1.getBalance());
         System.out.println("payAccount1 - " + payAccount1.getBalance());
         System.out.println();
 
-        cardAccount1.transferTo(depAccount1, 500.0);
+        cardAccount1.transferTo(depAccount1, 50.0);
         System.out.println("cardAccount1.transferTo(depAccount1)");
         System.out.println("cardAccount1 - " + cardAccount1.getBalance());
         System.out.println("depAccount1 - " + depAccount1.getBalance());

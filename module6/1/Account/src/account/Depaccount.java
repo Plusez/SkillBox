@@ -1,10 +1,6 @@
 package account;
 
-import java.time.LocalDate;
-
 public class Depaccount extends Payaccount {
-
-    protected static double FEE = 0;
 
     public Depaccount(double balance) {
         super(balance);
@@ -16,10 +12,6 @@ public class Depaccount extends Payaccount {
         if (countPayPeriod < 30) {
             System.out.println("Сумма не может быть выдана, не прошло 30 дней");
             System.out.println("countPayPeriod - " + countPayPeriod);
-            return false;
-        }
-        if ((balance - paySum) < 0) {
-            System.out.println("STOP");
             return false;
         } else {
             super.payMoney(paySum);

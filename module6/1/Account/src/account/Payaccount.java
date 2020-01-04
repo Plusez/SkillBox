@@ -2,7 +2,7 @@ package account;
 
 public class Payaccount {
 
-    protected double balance;
+    private double balance;
 
     public Payaccount(double balance) {
         this.balance = balance;
@@ -12,25 +12,25 @@ public class Payaccount {
         return balance;
     }
 
-    public boolean receiveMoney(double receiveSum) {
-        balance += receiveSum;
+    public boolean receiveMoney(double paySum) {
+        balance += paySum;
         return true;
     }
 
     public boolean payMoney(double paySum) {
-        if ((balance - paySum) < 0) {
-            System.out.println("STOP");
-            return false;
-        } else {
+        if (balance > paySum) {
             balance -= paySum;
             System.out.println("paySum - " + paySum);
             return true;
+        } else {
+            System.out.println("STOP");
+            return false;
         }
     }
 
-    public boolean transferTo(Payaccount receiveAccount, double receiveSum) {
-        if (payMoney(receiveSum)) {
-            receiveAccount.receiveMoney(receiveSum);
+    public boolean transferTo(Payaccount receiveAccount, double paySum) {
+        if (payMoney(paySum)) {
+            receiveAccount.receiveMoney(paySum);
             return true;
         } else {
             System.out.println("Операция не может быть проведена, есть ограничения по счету.");
@@ -38,4 +38,3 @@ public class Payaccount {
         }
     }
 }
-

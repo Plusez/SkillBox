@@ -2,8 +2,7 @@ package account;
 
 public class Cardaccount extends Payaccount {
 
-    protected static double FEE = 0.01;
-    double paySum;
+    private static final double FEE = 0.01;
 
     public Cardaccount(double balance) {
         super(balance);
@@ -11,14 +10,8 @@ public class Cardaccount extends Payaccount {
 
     @Override
     public boolean payMoney(double paySum) {
-        if ((balance - paySum * (1 + FEE)) < 0) {
-            System.out.println("STOP");
-            return false;
-        } else {
-            super.payMoney(paySum * (1 + FEE));
-            this.paySum = paySum;
-            System.out.println("FEE = " + FEE);
-            return true;
-        }
+        super.payMoney(paySum * (1 + FEE));
+        System.out.println("FEE = " + FEE);
+        return true;
     }
 }
