@@ -10,8 +10,7 @@ public class Cardaccount extends Payaccount {
 
     @Override
     public boolean payMoney(double paySum) {
-        super.payMoney(paySum * (1 + FEE));
         System.out.println("FEE = " + FEE);
-        return true;
+        return super.payMoney(paySum * (1 + FEE));
     }
 }
