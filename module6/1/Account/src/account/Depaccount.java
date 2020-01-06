@@ -17,9 +17,7 @@ public class Depaccount extends Payaccount {
             System.out.println("countPayPeriod - " + countPayPeriod);
             return status;
         }
-
     }
-
     public int getPrevPayPeriod() {
         int minRange = 30;              // устанавливаем срок от 20 до 40 дней.
         int maxRange = 40;

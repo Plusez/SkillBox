@@ -49,15 +49,11 @@ public class Main {
         System.out.println();
 
         System.out.println("Пробуем переводы");
-//        System.out.println("in balance payAccount1 - " + payAccount1.getBalance());
-//        System.out.println("in balance depAccount1 - " + depAccount1.getBalance());
-//        System.out.println("in balance depAccount2 - " + depAccount2.getBalance());
         System.out.println();
         System.out.println("cardAccount1.transferTo(cardAccount2, 500)");
         System.out.println("in balance cardAccount1 - " + cardAccount1.getBalance());
         System.out.println("in balance cardAccount2 - " + cardAccount2.getBalance());
         cardAccount1.transferTo(cardAccount2, 500.0);
-//        System.out.println("Сумма перевода - 500");
         System.out.println("in balance cardAccount1 - " + cardAccount1.getBalance());
         System.out.println("in balance cardAccount2 - " + cardAccount2.getBalance());
         System.out.println();

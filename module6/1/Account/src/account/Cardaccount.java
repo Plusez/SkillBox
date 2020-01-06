@@ -2,7 +2,7 @@ package account;
 
 public class Cardaccount extends Payaccount {
 
-    private static final double FEE = 0.01;
+    public static final double FEE = 0.01;
 
     public Cardaccount(double balance) {
         super(balance);
