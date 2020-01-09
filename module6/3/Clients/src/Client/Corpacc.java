@@ -10,12 +10,6 @@ public class Corpacc extends Clientacc {
 
     @Override
     public boolean transOut(double transSum) {
-        if (getBalance() < transSum * (1 + FEEOUT)) {
-            System.out.println("Операция невозможна. Сумма больше остатка на счете");
-            return false;
-        } else {
-            super.balance -= transSum * (1 + FEEOUT);
-            return true;
-        }
+        return super.transOut(transSum * (1 + FEEOUT));
     }
 }

@@ -37,6 +37,7 @@ public class Main {
         privateAcc1.transOut(40.0);
         System.out.println("privateAcc1 after transOut 40 - " + privateAcc1.getBalance());
         System.out.println();
+
     }
 }
 
