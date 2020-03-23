@@ -5,6 +5,13 @@ public class TopManager implements Employee {
     double fixTale = 100.0;
     double monthSalaryTM;
 
+    public TopManager() {
+        getMonthSalary();
+    }
+
+    public String toString() {
+        return "TopManager";
+    }
 
     @Override
     public double getMonthSalary() {

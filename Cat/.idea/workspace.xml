@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3566954-15db-468d-82d7-9b60a8957e26" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../module6/4/src/Employee/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module6/4/src/Employee/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module6/4/src/Employee/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module6/4/src/Employee/Operator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module6/4/src/Employee/TopManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module6/4/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/4/src/Employee/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/4/src/Employee/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/4/src/Employee/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/4/src/Employee/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module6/4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/4/src/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
