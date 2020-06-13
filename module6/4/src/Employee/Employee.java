@@ -1,6 +1,17 @@
 package Employee;
 
-public interface Employee {
+public abstract class Employee implements Comparable<Employee> {
 
-    double getMonthSalary();
+    public abstract double getMonthSalary();
+
+    public int compareTo(Employee employee) {
+        if (getMonthSalary() > employee.getMonthSalary()) {
+            return -1;
+        }
+        if (getMonthSalary() < employee.getMonthSalary()) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
 }

@@ -1,9 +1,8 @@
 package Employee;
 
-public class Operator implements Employee {
+public class Operator extends Employee {
 
-    double fixTale = 100.0;
-    double monthSalaryO;
+    public static double fixPart = 100.0;
 
     public Operator() {
         getMonthSalary();
@@ -15,6 +14,18 @@ public class Operator implements Employee {
 
     @Override
     public double getMonthSalary() {
-        return monthSalaryO = fixTale;
+        return fixPart;
+    }
+
+    @Override
+    public int compareTo(Employee employee) {
+        if (employee.getMonthSalary() > employee.getMonthSalary()) {
+            return -1;
+        }
+        if (employee.getMonthSalary() < employee.getMonthSalary()) {
+            return 1;
+        } else {
+            return 0;
+        }
     }
 }
