@@ -1,38 +1,27 @@
 package Employee;
 
-public class TopManager extends Employee implements Comparable<Employee> {
+public class TopManager extends Employee {
 
-    double fixPart = 150.0;
+    public static final double FIX_PART = 150.0;
     double monthSalary;
+    private Company company;
 
-    public TopManager() {
-        if (Manager.getIncomeCompany() > 10000000) {
-            monthSalary = (fixPart + fixPart * 1.5);
-        } else {
-            monthSalary = fixPart;
-        }
-    }
-
-    public String toString() {
-        return "topManager";
+    public TopManager(Company company) {
+        this.company = company;
     }
 
     @Override
     public double getMonthSalary() {
+        if (company.getIncome() > 10000000) {
+            monthSalary = (FIX_PART + FIX_PART * 1.5);
+        } else {
+            monthSalary = FIX_PART;
+        }
         return monthSalary;
     }
 
     @Override
-    public int compareTo(Employee employee) {
-        if (getMonthSalary() > employee.getMonthSalary()) {
-            return -1;
-        }
-        if (getMonthSalary() < employee.getMonthSalary()) {
-            return 1;
-        } else {
-            return 0;
-        }
+    public double getSalesAmount() {
+        return 0;
     }
 }
-
-

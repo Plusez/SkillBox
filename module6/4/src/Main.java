@@ -17,7 +17,7 @@ public class Main {
             OOO.hire(operator);
         }
         for (int z = 0; z < 1; z++) {                          //нанимаем 1 топ-менеджеров
-            TopManager topManager = new TopManager();
+            TopManager topManager = new TopManager(OOO);
             OOO.hire(topManager);
         }
         System.out.println("Количество сотрудников - " + OOO.quantityEmployee());
@@ -44,5 +44,6 @@ public class Main {
             OOO.fire();
         }
         System.out.println("Количество уволенных - " + quantityFire);
+        System.out.println("OOO.getIncome - " + OOO.getIncome());
     }
 }

@@ -3,6 +3,7 @@ package Employee;
 import java.util.ArrayList;
 
 public class Company {
+    double income;
 
     public ArrayList<Employee> listEmployee = new ArrayList<>();
 
@@ -20,5 +21,13 @@ public class Company {
 
     public int quantityEmployee() {
         return listEmployee.size();
+    }
+    public double getIncome() {
+        for (Employee worker : listEmployee) {
+            if (worker instanceof Manager) {
+                 income += worker.getSalesAmount();
+            }
+        }
+        return income;
     }
 }

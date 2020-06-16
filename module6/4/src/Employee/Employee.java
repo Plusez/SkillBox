@@ -4,14 +4,14 @@ public abstract class Employee implements Comparable<Employee> {
 
     public abstract double getMonthSalary();
 
+    public abstract double getSalesAmount();
+
+    @Override
+    public String toString(){
+        return this.getClass().getSimpleName();
+    }
+
     public int compareTo(Employee employee) {
-        if (getMonthSalary() > employee.getMonthSalary()) {
-            return -1;
-        }
-        if (getMonthSalary() < employee.getMonthSalary()) {
-            return 1;
-        } else {
-            return 0;
-        }
+        return Double.compare(employee.getMonthSalary(), getMonthSalary());
     }
 }
